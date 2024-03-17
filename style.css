@@ -1,17 +1,20 @@
 body {
     font-family: roboto, sans-serif;
+    margin: 0;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 150px;
-    background-color: grey;
+    padding: 20px 250px;
+    background-color: #1F2937;
 }
 
 .logo {
-    color: white;
+    color: #f9faf8;
+    font-size: 24px;
+    font-weight: 700;
 }
 
 ul {
@@ -20,64 +23,94 @@ ul {
     padding: 0;
     display: flex;
     gap: 20px;
-    color: white;
+    color: #e5e7eb;
 }
 
 a {
     text-decoration: none;
+    color: #e5e7eb;
 }
 
 .hero {
    display: flex;
    gap: 25px;
-   padding: 75px 150px;
+   padding: 50px 200px 150px 200px;
    background-color: #1f2937;
 }
 
 .hero h1 {
-    color: white;
+    color: #F9FAF8;
+    font-size: 48px;
+    margin-bottom: 0;
 }
 
 .hero p {
-    color: white;
+    color: #e5e7eb;
 }
 
 .value-prop {
+    display: flex;
+    flex-direction: column;
     flex-grow: 1;
+    flex-shrink: 2;
     align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0px 40px;
+}
+
+.hero-button {
+    background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
+    padding: 8px 30px;
+    color: white;
+    font-style: bold;
 }
 
 .hero-image {
     display: flex;
-    flex-grow: 2;
-    width: 700px;
+    flex-grow: 3;
+    flex-shrink: 1;
+    width: 600px;
     justify-content: center;
     align-items: center;
     background-color: #6d747d;
+    color: #F9FAF8;
+    margin: 20px;
 }
 
 h2 {
     text-align: center;
     margin-bottom: 50px;
+    font-style: bold;
 }
 
 .info {
-    padding: 25px 200px;
+    padding: 25px 200px 100px 200px;
+}
+
+.info h2 {
+    font-size: 36px;
+    font-style: extra-bold;
+    color: #1f2937;
 }
 
 .cards {
     display: flex;
     justify-content: center;
-    gap: 24px;
+    gap: 10px;
 }
 
 .info-image {
-    border: solid blue;
-    padding: 50px;
+    border: 3px solid #2882f6;
+    padding: 70px 20px;
+    margin: 0px 35px;
+    border-radius: 10px;
 }
 
 .info-text {
     text-align: center;
+    margin: 10px 20px;
 }
 
 .quote-section {
@@ -85,18 +118,20 @@ h2 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 25px 200px;
+    padding: 50px 250px 60px 250px;
     background-color: #e5e7eb;
 }
 
 .quote {
-    font-size: 28px; 
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937; 
 }
 
 .quoted {
     align-self: flex-end;
-    font-size: 20px;
-    font-weight: 800;
+    font-size: 24px;
 }
 
 .cta-section {
@@ -112,20 +147,31 @@ h2 {
     padding: 20px;
     display: flex;
     justify-content: space-around;
+    border-radius: 10px;
 }
 
 .container h3 {
     color: white;
+    margin-bottom: 0px;
 }
 
 .container p {
     color: white;
+    font-weight: 300;
 }
 
 .signup {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.end {
+    background-color: #3c82f6;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 8px 30px;
 }
 
 .footer {
